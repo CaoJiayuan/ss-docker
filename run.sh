@@ -1,6 +1,12 @@
 #!/bin/sh
-echo "Run privoxy..."
-privoxy /etc/privoxy/config
+if [ "${HTTP}" == "" ]; then
+   export HTTP=true
+fi
+if [ ${HTTP} == true ]; then
+    echo "Run privoxy..."
+    privoxy /etc/privoxy/config
+fi
+
 echo "Replacing config..."
 if [ "${PASSWORD}" == "" ]; then
    export PASSWORD="123456"

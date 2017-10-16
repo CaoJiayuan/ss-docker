@@ -5,3 +5,4 @@
 ### Environments
 * ```PASSWORD``` ss passowrd (default:123456)
 * ```METHOD``` encrypt method (default:aes-256-gcm)
+* ```HTTP``` using http proxy (default:true)

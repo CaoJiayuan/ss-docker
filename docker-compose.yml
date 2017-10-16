@@ -5,3 +5,4 @@ ssdocker:
     - 10080:8080
   environment:
     - PASSWORD=632258
+    - HTTP=false
