@@ -6,3 +6,6 @@ ssdocker:
   environment:
     - PASSWORD=632258
     - HTTP=false
+    - SERVER=125.33.213.22
+    - SERVER_PORT=443
+    

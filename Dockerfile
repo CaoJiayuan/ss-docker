@@ -1,5 +1,5 @@
 FROM registry.docker-cn.com/library/alpine
-ENV PYTHON_VERSION=2.7.13-r1
+ENV PYTHON_VERSION=2.7.14-r2
 ENV PY_PIP_VERSION=9.0.1-r1
 ENV BUILD_DEPS="gettext"  \
     RUNTIME_DEPS="libintl"
@@ -16,5 +16,5 @@ COPY ./ss.json.template /ss.json.template
 COPY ./run.sh /run.sh
 RUN chmod +x /run.sh
 COPY ./privoxy-config /etc/privoxy/config
-EXPOSE 8080 8118
+EXPOSE 8080 8118 1080
 ENTRYPOINT /run.sh
